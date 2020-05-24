@@ -1,0 +1,63 @@
+<!--
+Index HTML file for Wheather Journal App. UDACITY Project - Front End Developper Nanodegree
+version: 0.0.1
+created on: 23/05/20
+last modified: 23/05/20
+Updates:
+23/05/20    File Creation
+author: E. RONDON
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Weather App</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="grid-container">
+            <!-- Header containing the Navbar of the app-->
+            <header class="header-section-layout header-section-style">
+                <h1 class="principal-color-text">Weather App</h1>
+                <nav id="navigaton-bar" class="navbar-global-container">
+                    <ul class="navbar-flex-container navbar-container-style">
+                        <li class="navbar-item-flex"><a id="search-by-city-menu" class="navbar-item-style" href="#">BY CITY</a></li>
+                        <li class="navbar-item-flex"><a id="search-by-zip-menu" class="navbar-item-style" href="#">BY ZIP CODE</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- input section of the app by city-->
+            <section class="input-section-layout">
+                <div class="input-flex-container">
+                    <div id="input-by-city" class="input-flex-division">
+                        <h2 class="secondary-color-text input-title">Search by City Name</h2>
+                        <label for="city-name-input" class="input-label">Enter City name here</label>
+                        <input type="text" class="input-text" id="city-name-input" placeholder="enter city name here">
+                    </div>
+                    <div id="input-by-zip-code" class="input-flex-division">
+                        <h2 class="secondary-color-text input-title">Search by Zip Code</h2>
+                        <label for="zip-code-input" class="input-label">Enter Zipcode here</label>
+                        <input type="text" class="input-text" id="zip-code-input" placeholder="enter zip code here">
+                    </div>
+                    <div class="input-flex-division">
+                        <label for="today-feelings-input" class="input-label">How are you feeling today?</label>
+                        <textarea class= "input-text" id="today-feelings-input" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
+                    </div>
+                    <button id="generate-button" class="input-button">Add Data</button>
+                </div>
+            </section>
+            <!-- weather cards section of the app-->
+            <section id="temperature-cards-container" class="content-section-layout">
+
+            </section>
+            <!-- Footer containing the Navbar of the app-->
+            <footer class="footer-section-layout footer-section-style">
+                <p class="white-color-text">© 2020 Copyright: Eduardo Rondon</p>
+            </footer>            
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
